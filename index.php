@@ -41,7 +41,7 @@ error_reporting(E_ERROR);
     $t = $_POST['t'];
     $o = $_POST['o'];
     $h = $_POST['h'];
-    $command = escapeshellcmd("python script.py $t $o $h");
+    $command = escapeshellcmd("py script.py $t $o $h");
     $output = exec($command);
     echo $output;
 ?>
